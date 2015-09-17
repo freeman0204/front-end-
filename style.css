@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 1px solid #fff555;
+}
+
+body {
+	font: 100%/1.5em Arial, Helvetica, sans-serif;
+	color: #000;
+	background: url(img/12-Col-Grid.png) no-repeat 50% 50%;;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	background: #d2d2d2;
+	width: 92.2%;
+	margin: 0 auto;
+
+	
+}
+
+.bg {
+	background: url(img/img.png) no-repeat 50% 50%;;
+	width: 100%;
+	height: 450px;
+
+}
+
+.container .cols {
+	float: left;
+	background-color: #3673f6;
+	text-align: center;
+	padding: 0 10px;
+}
+
+
+
+.container .cols.col-1 { width: 8.33333333333%; }
+.container .cols.col-2 { width: 16.666666667%; }
+.container .cols.col-3 { width: 25%; }
+.container .cols.col-4 { width: 33.333333333%; }
+.container .cols.col-5 { width: 41.666666667%; }
+.container .cols.col-6 { width: 50%; }
+.container .cols.col-7 { width: 58.333333333%; }
+.container .cols.col-8 { width: 66.666666667%; }
+.container .cols.col-9 { width: 75%; }
+.container .cols.col-10 { width: 83.333333333%; }
+.container .cols.col-11 { width: 91.666666667%; }
+.container .cols.col-12 { width: 100%; }
+
+.container:before,
+.container:after,
+.row:after,
+.row:before,
+.clear:before,
+.clear:after {
+	content: "";
+	display: table;
+}
+
+.container:after,
+.row:after,
+.clear:after {
+	clear: both;
+}
